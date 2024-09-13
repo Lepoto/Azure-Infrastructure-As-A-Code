@@ -1,6 +1,6 @@
 param skuNam string = 'B1'
 
-param location string = resourceGroup().location
+param location string
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
   name: 'shapers-dev-website'
